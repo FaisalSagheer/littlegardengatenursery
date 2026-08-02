@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 40 45% 96%;
+  --foreground: 40 10% 16%;
+  --primary: 100 15% 55%;
+  --primary-foreground: 0 0% 100%;
+  --border: 40 25% 85%;
+  --input: 40 25% 85%;
+  --ring: 100 15% 55%;
+  --radius: 0.75rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fbf6ec;
+  color: #2e2a24;
+  font-family: var(--font-nunito), sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-fredoka), sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
