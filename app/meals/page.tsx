@@ -1,33 +1,33 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const MENU = [
-  { day: "Monday", breakfast: "Vegetable daal & roti", lunch: "Chicken pulao & salad", snack: "Banana & milk" },
-  { day: "Tuesday", breakfast: "Boiled eggs & toast", lunch: "Lentil soup & bread", snack: "Apple slices" },
-  { day: "Wednesday", breakfast: "Oatmeal & berries", lunch: "Vegetable khichdi", snack: "Yogurt cup" },
-  { day: "Thursday", breakfast: "Paratha & yogurt", lunch: "Fish & rice", snack: "Cheese & crackers" },
-  { day: "Friday", breakfast: "Pancakes & fruit", lunch: "Vegetable pasta", snack: "Carrot sticks & hummus" },
+  { day: "Monday", breakfast: "Porridge with banana & raisins", lunch: "Chicken casserole with mash & seasonal veg", snack: "Apple slices & milk" },
+  { day: "Tuesday", breakfast: "Toast with scrambled egg", lunch: "Lentil dhal with rice & cucumber sticks", snack: "Yoghurt & berries" },
+  { day: "Wednesday", breakfast: "Weetabix with milk & fruit", lunch: "Vegetable pasta bake & mixed salad", snack: "Carrot sticks & hummus" },
+  { day: "Thursday", breakfast: "Wholemeal toast with soft cheese", lunch: "Fish fingers, new potatoes & peas", snack: "Cheese & crackers" },
+  { day: "Friday", breakfast: "Pancakes with fruit purée", lunch: "Jacket potato with beans & salad", snack: "Banana & water" },
 ];
 
 const NOTES = [
-  { title: "Allergy-aware kitchen", desc: "Every dish is labeled for common allergens, and substitutes are made on request at no extra cost." },
-  { title: "No added sugar before 2", desc: "Meals for our youngest room skip added sugar and salt entirely, per pediatric guidance." },
-  { title: "Bring your own, if you prefer", desc: "Happy to warm and serve home-packed lunches alongside our own menu — just label the container." },
+  { title: "Allergy-aware kitchen", desc: "Every dish is clearly labelled for common allergens. Suitable substitutes are always available on request at no extra cost." },
+  { title: "No added sugar before 2", desc: "Meals for our under-twos contain no added sugar or salt, in line with NHS and Early Years Foundation Stage guidance." },
+  { title: "Bring your own if you prefer", desc: "We’re happy to warm and serve home-packed lunches alongside our menu — just label the container clearly with your child’s name." },
 ];
 
 const PHILOSOPHY = [
-  { icon: "👩‍🍳", title: "Cooked from scratch", desc: "No pre-packaged or reheated meals — everything is made in our kitchen each morning." },
-  { icon: "💧", title: "Water all day", desc: "Water bottles are refilled and offered throughout the day, not just at mealtimes." },
-  { icon: "🥦", title: "Whole ingredients", desc: "Fresh vegetables, whole grains, and lean proteins — no artificial colors or flavors." },
-  { icon: "📝", title: "Menus shared weekly", desc: "Full menus posted a week in advance so you can flag allergies or preferences ahead of time." },
+  { icon: "👩‍🍳", title: "Cooked from scratch", desc: "No pre-packaged or reheated meals. Everything is prepared fresh in our on-site kitchen each morning." },
+  { icon: "💧", title: "Water throughout the day", desc: "Fresh drinking water is freely available and offered regularly, not just at mealtimes." },
+  { icon: "🥦", title: "Whole, fresh ingredients", desc: "We use fresh vegetables, wholegrains and lean proteins. No artificial colours, flavours or additives." },
+  { icon: "📝", title: "Menus shared weekly", desc: "Full menus are posted a week in advance so you can flag any allergies or preferences in good time." },
 ];
 
 const FAQS = [
-  { q: "Will my child's meals be provided?", a: "Yes — breakfast, lunch, and two snacks are included in every session at no extra cost, freshly prepared in our on-site kitchen each day." },
-  { q: "Who is the food provided by?", a: "All meals are cooked in-house by our own kitchen team, using fresh ingredients delivered daily — nothing is outsourced or reheated from a central supplier." },
-  { q: "Do you provide formula milk?", a: "We can prepare formula using milk you provide and label with your instructions. Please discuss your brand and feeding schedule with your child's keyworker before their start date." },
-  { q: "Can I provide expressed breast milk?", a: "Yes. Bring clearly labelled bottles with your child's name and the date expressed, and our team will store and warm it according to your instructions." },
-  { q: "How do you manage dietary requirements?", a: "As part of our sign-up process, we capture your child's individual dietary requirements. We recognise these may be due to a medical condition, cultural preference, or weaning stage, and ask that you notify us immediately in writing if anything changes, so our records stay up to date." },
-  { q: "How do you encourage good eating habits?", a: "Mealtimes are a relaxed, social experience where children are encouraged to sit, enjoy their food, and try new flavours. A team member joins the table to promote positive habits and conversation. We respect cultural differences in eating practices, and you'll receive updates on your child's meals at pickup or via our nursery app." },
+  { q: "Will my child’s meals be provided?", a: "Yes — breakfast, lunch and two snacks are included in every session at no extra cost. All food is freshly prepared in our on-site kitchen each day." },
+  { q: "Who provides the food?", a: "All meals are cooked in-house by our own kitchen team using fresh ingredients delivered daily. Nothing is outsourced or reheated from an external supplier." },
+  { q: "Do you provide formula milk?", a: "We can prepare formula using milk that you supply, following your written instructions. Please discuss your preferred brand and feeding schedule with your child’s key person before their start date." },
+  { q: "Can I provide expressed breast milk?", a: "Yes. Please bring clearly labelled bottles with your child’s name and the date expressed. Our team will store and warm it according to your instructions." },
+  { q: "How do you manage dietary requirements?", a: "As part of our registration process we record your child’s individual dietary needs, whether medical, cultural or related to weaning stage. Please notify us in writing immediately if anything changes so our records remain accurate." },
+  { q: "How do you encourage good eating habits?", a: "Mealtimes are relaxed and social. Children are encouraged to sit together, enjoy their food and try new flavours. A member of the team sits with them to model positive habits and conversation. We respect cultural differences in eating practices, and you’ll receive updates on your child’s meals at collection or via our nursery app." },
 ];
 
 export default function MealsPage() {

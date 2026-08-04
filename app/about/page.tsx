@@ -1,9 +1,24 @@
-
 const APPROACH = [
-  { icon: "🌱", title: "Play-led learning", desc: "Children learn best through hands-on play, not worksheets or drills." },
-  { icon: "🤝", title: "Real relationships", desc: "Every child is known by name — by their teacher, and by us." },
-  { icon: "🔍", title: "Full transparency", desc: "You'll always know what your child ate, learned, and enjoyed each day." },
-  { icon: "🏡", title: "A second home", desc: "Warm, unhurried, and familiar — the opposite of institutional." },
+  { 
+    img: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&h=200&fit=crop", 
+    title: "Play-led learning", 
+    desc: "Children learn best through hands-on play, not worksheets or drills." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=200&h=200&fit=crop", 
+    title: "Real relationships", 
+    desc: "Every child is known by name — by their teacher, and by us." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=200&h=200&fit=crop", 
+    title: "Full transparency", 
+    desc: "You'll always know what your child ate, learned, and enjoyed each day." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=200&h=200&fit=crop", 
+    title: "A second home", 
+    desc: "Warm, unhurried, and familiar — the opposite of institutional." 
+  },
 ];
 
 const CURRICULUM = ["EYFS", "Reggio Emilia", "Steiner", "Montessori", "Forest School"];
@@ -25,21 +40,21 @@ const TEAM = [
 
 const OUTDOOR = [
   {
-    icon: "🚌",
+    img: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop",
     bg: "#E7EFE6",
     title: "Community",
     desc: "Children explore and connect with the world beyond the nursery through everyday outings — building a sense of belonging in the community around them.",
     tags: ["Bus rides", "Library visits", "Local trips", "Post office", "Fire station visits"],
   },
   {
-    icon: "🤸",
+    img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=400&h=300&fit=crop",
     bg: "#E6EEF3",
     title: "Physical Health",
     desc: "Our outdoor spaces are full of opportunities to climb, balance, ride, and play — helping children move confidently, build strength, and take healthy risks.",
     tags: ["Climbing", "Ball games", "Obstacle courses", "Balance & coordination"],
   },
   {
-    icon: "🌻",
+    img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop",
     bg: "#FEF3DC",
     title: "Environmentalism",
     desc: "From a young age, we encourage children to connect with the natural world. Our planting stations and vegetable patches let them grow their own food and take pride in caring for it.",
@@ -48,12 +63,48 @@ const OUTDOOR = [
 ];
 
 const CUBBIES = [
-  { bg: "#E7EFE6", icon: "🌿", title: "Outdoor Play Yard", desc: "A shaded garden with a vegetable patch, sandpit, and climbing frame for gross-motor play, rain or shine.", tag: "Daily, 10–11am" },
-  { bg: "#FBEAE3", icon: "📚", title: "Reading Corner", desc: "Floor cushions and a rotating shelf of picture books, sorted low enough for even the youngest to reach.", tag: "Open all day" },
-  { bg: "#FEF3DC", icon: "🎨", title: "Art Studio", desc: "Paint, clay, and collage supplies that wash out — because the mess is the point, not the mistake.", tag: "Daily, 2–3pm" },
-  { bg: "#E6EEF3", icon: "🌙", title: "Nap Room", desc: "A dim, quiet room with individual cots and white noise, kept on the same nap schedule every day.", tag: "12:30–2:30pm" },
-  { bg: "#E7EFE6", icon: "🍎", title: "Meal Program", desc: "Home-style meals cooked fresh on-site each morning, with menus posted a week ahead for allergies.", tag: "Breakfast, lunch, snack" },
-  { bg: "#FBEAE3", icon: "🎵", title: "Music & Movement", desc: "A soft-floored room for singing circles, simple instruments, and dancing off the morning energy.", tag: "Daily, 9–9:30am" },
+  { 
+    img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=200&h=200&fit=crop", 
+    bg: "#E7EFE6", 
+    title: "Outdoor Play Yard", 
+    desc: "A shaded garden with a vegetable patch, sandpit, and climbing frame for gross-motor play, rain or shine.", 
+    tag: "Daily, 10–11am" 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=200&h=200&fit=crop", 
+    bg: "#FBEAE3", 
+    title: "Reading Corner", 
+    desc: "Floor cushions and a rotating shelf of picture books, sorted low enough for even the youngest to reach.", 
+    tag: "Open all day" 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=200&h=200&fit=crop", 
+    bg: "#FEF3DC", 
+    title: "Art Studio", 
+    desc: "Paint, clay, and collage supplies that wash out — because the mess is the point, not the mistake.", 
+    tag: "Daily, 2–3pm" 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=200&h=200&fit=crop", 
+    bg: "#E6EEF3", 
+    title: "Nap Room", 
+    desc: "A dim, quiet room with individual cots and white noise, kept on the same nap schedule every day.", 
+    tag: "12:30–2:30pm" 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=200&h=200&fit=crop", 
+    bg: "#E7EFE6", 
+    title: "Meal Program", 
+    desc: "Home-style meals cooked fresh on-site each morning, with menus posted a week ahead for allergies.", 
+    tag: "Breakfast, lunch, snack" 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=200&h=200&fit=crop", 
+    bg: "#FBEAE3", 
+    title: "Music & Movement", 
+    desc: "A soft-floored room for singing circles, simple instruments, and dancing off the morning energy.", 
+    tag: "Daily, 9–9:30am" 
+  },
 ];
 
 const DAY: [string, string][] = [
@@ -70,17 +121,49 @@ const DAY: [string, string][] = [
 ];
 
 const SAFETY = [
-  { icon: "🔐", title: "Secure entry", desc: "Keypad entry and sign-in/sign-out for every drop-off and pickup." },
-  { icon: "📹", title: "CCTV monitored", desc: "All play and rest rooms are monitored during opening hours." },
-  { icon: "🩹", title: "First-aid trained", desc: "At least one paediatric first-aid trained staff member on-site at all times." },
-  { icon: "🧴", title: "Cleaned daily", desc: "Toys, cots, and surfaces are sanitized every evening after closing." },
+  { 
+    img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop", 
+    title: "Secure entry", 
+    desc: "Keypad entry and sign-in/sign-out for every drop-off and pickup." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=200&h=200&fit=crop", 
+    title: "CCTV monitored", 
+    desc: "All play and rest rooms are monitored during opening hours." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=200&h=200&fit=crop", 
+    title: "First-aid trained", 
+    desc: "At least one paediatric first-aid trained staff member on-site at all times." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=200&h=200&fit=crop", 
+    title: "Cleaned daily", 
+    desc: "Toys, cots, and surfaces are sanitized every evening after closing." 
+  },
 ];
 
 const ENRICHMENT = [
-  { icon: "🧘", title: "Yoga", desc: "Gentle movement and breathing to help children settle and focus." },
-  { icon: "🧁", title: "Cooking & Baking", desc: "Simple, hands-on recipes that build fine motor skills and confidence." },
-  { icon: "💃", title: "Doodle Dance", desc: "Free-movement dance sessions that mix music, art, and imagination." },
-  { icon: "🇪🇸", title: "Spanish", desc: "Playful, song-based introduction to a second language each week." },
+  { 
+    img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=200&h=200&fit=crop", 
+    title: "Yoga", 
+    desc: "Gentle movement and breathing to help children settle and focus." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=200&h=200&fit=crop", 
+    title: "Cooking & Baking", 
+    desc: "Simple, hands-on recipes that build fine motor skills and confidence." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=200&h=200&fit=crop", 
+    title: "Doodle Dance", 
+    desc: "Free-movement dance sessions that mix music, art, and imagination." 
+  },
+  { 
+    img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop", 
+    title: "Spanish", 
+    desc: "Playful, song-based introduction to a second language each week." 
+  },
 ];
 
 export default function AboutPage() {
@@ -98,7 +181,13 @@ export default function AboutPage() {
 
       {/* ETHOS */}
       <div className="mt-10 mb-2.5 rounded-2xl bg-[#E7EFE6] p-6 flex gap-4 items-start">
-        <div className="w-[38px] h-[38px] rounded-xl bg-sage flex items-center justify-center text-base flex-none">🌱</div>
+        <div className="w-[38px] h-[38px] rounded-xl overflow-hidden flex-none">
+          <img 
+            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=100&h=100&fit=crop" 
+            alt="Ethos" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         <p className="text-[14.5px] text-ink-soft">
           <strong className="block font-display text-ink mb-0.5">Our Ethos</strong>
           Every child arrives as a seed, not a finished plant. We don&apos;t rush growth or compare
@@ -113,7 +202,9 @@ export default function AboutPage() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
           {APPROACH.map((a) => (
             <div key={a.title} className="rounded-2xl border border-line bg-card p-6">
-              <div className="text-xl mb-3">{a.icon}</div>
+              <div className="w-12 h-12 rounded-xl overflow-hidden mb-3">
+                <img src={a.img} alt={a.title} className="w-full h-full object-cover" />
+              </div>
               <h3 className="text-[15px] mb-1.5">{a.title}</h3>
               <p className="text-[14px] text-ink-soft">{a.desc}</p>
             </div>
@@ -150,7 +241,7 @@ export default function AboutPage() {
         ))}
       </div>
 
-      {/* OUTDOOR LEARNING (merged from the former dedicated page) */}
+      {/* OUTDOOR LEARNING */}
       <div id="outdoor-learning" className="scroll-mt-24 mb-11">
         <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">Outdoor Learning</span>
         <h2 className="text-2xl sm:text-[32px] my-3.5 mb-5 max-w-[720px]">
@@ -164,8 +255,8 @@ export default function AboutPage() {
         <div className="flex flex-col">
           {OUTDOOR.map((o, i) => (
             <div key={o.title} className={`grid grid-cols-1 sm:grid-cols-[220px_1fr] gap-4 sm:gap-7 items-center py-7 border-line ${i === 0 ? "" : "border-t"}`}>
-              <div className="h-[150px] rounded-2xl flex items-center justify-center text-4xl" style={{ background: o.bg }}>
-                {o.icon}
+              <div className="h-[150px] rounded-2xl overflow-hidden">
+                <img src={o.img} alt={o.title} className="w-full h-full object-cover" />
               </div>
               <div>
                 <h3 className="text-[19px] mb-2">{o.title}</h3>
@@ -192,13 +283,17 @@ export default function AboutPage() {
               build independence in a safe, supportive environment.
             </p>
           </div>
-          <div className="h-[180px] rounded-2xl bg-[#DDE6D4] flex items-center justify-center text-5xl" aria-hidden="true">
-            🌳
+          <div className="h-[180px] rounded-2xl overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=360&fit=crop" 
+              alt="Forest School" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
 
-      {/* AMENITIES (merged from the former dedicated page) */}
+      {/* AMENITIES */}
       <div id="amenities" className="scroll-mt-24 mb-11">
         <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">What&apos;s Here</span>
         <h2 className="text-2xl sm:text-[32px] my-3.5 mb-5 max-w-[720px]">Every corner has a job to do.</h2>
@@ -216,8 +311,8 @@ export default function AboutPage() {
               }`}
             >
               <div className="w-3.5 h-3.5 rounded-full bg-ink absolute top-4 left-6" />
-              <div className="w-[46px] h-[46px] rounded-xl flex items-center justify-center text-[22px] mt-5 mb-4" style={{ background: c.bg }}>
-                {c.icon}
+              <div className="w-[46px] h-[46px] rounded-xl overflow-hidden mt-5 mb-4">
+                <img src={c.img} alt={c.title} className="w-full h-full object-cover" />
               </div>
               <h3 className="text-lg mb-1.5">{c.title}</h3>
               <p className="text-ink-soft text-[14.5px]">{c.desc}</p>
@@ -245,7 +340,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {SAFETY.map((s) => (
               <div key={s.title} className="rounded-2xl border border-line bg-card p-5">
-                <div className="text-xl mb-2">{s.icon}</div>
+                <div className="w-10 h-10 rounded-xl overflow-hidden mb-2">
+                  <img src={s.img} alt={s.title} className="w-full h-full object-cover" />
+                </div>
                 <h4 className="text-[15px] mb-1">{s.title}</h4>
                 <p className="text-[13.5px] text-ink-soft">{s.desc}</p>
               </div>
@@ -262,7 +359,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {ENRICHMENT.map((e) => (
               <div key={e.title} className="rounded-2xl border border-line bg-card p-5">
-                <div className="text-xl mb-2">{e.icon}</div>
+                <div className="w-10 h-10 rounded-xl overflow-hidden mb-2">
+                  <img src={e.img} alt={e.title} className="w-full h-full object-cover" />
+                </div>
                 <h4 className="text-[15px] mb-1">{e.title}</h4>
                 <p className="text-[13.5px] text-ink-soft">{e.desc}</p>
               </div>
@@ -294,7 +393,13 @@ export default function AboutPage() {
 
       {/* REGISTERED NOTE */}
       <div className="rounded-2xl border border-line bg-card p-6 flex gap-4 items-start">
-        <div className="w-[38px] h-[38px] rounded-xl bg-sage flex items-center justify-center text-base flex-none">🛡️</div>
+        <div className="w-[38px] h-[38px] rounded-xl overflow-hidden flex-none">
+          <img 
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=100&h=100&fit=crop" 
+            alt="Registered" 
+            className="w-full h-full object-cover"
+          />
+        </div>
         <p className="text-[14.5px] text-ink-soft">
           <strong className="block font-display text-ink mb-0.5">Registered &amp; inspected</strong>
           Little Garden Gate is a registered childcare provider, DBS-checked staff throughout,

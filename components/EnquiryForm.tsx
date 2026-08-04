@@ -24,17 +24,6 @@ interface EnquiryFormProps {
   className?: string;
 }
 
-/**
- * Sends the form via EmailJS (https://www.emailjs.com/).
- *
- * Setup required before this works:
- * 1. Create a free EmailJS account and an Email Service + Email Template.
- * 2. Copy .env.local.example to .env.local and fill in:
- *    NEXT_PUBLIC_EMAILJS_SERVICE_ID
- *    NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
- *    NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
- * 3. In your EmailJS template, reference the field ids below as {{field_id}}.
- */
 export default function EnquiryForm({ fields, submitLabel = "Submit Enquiry", dark = false, className }: EnquiryFormProps) {
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 

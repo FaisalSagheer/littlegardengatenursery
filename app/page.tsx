@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import EnquiryForm from "@/components/EnquiryForm";
 import heroBanner from "@/public/images/hero-banner.jpg";
+import Image from "next/image";
 
 const FEATURES = [
   { icon: "🌿", bg: "#E7EFE6", title: "Outdoor Play", go: "Outdoor learning →", href: "/about#outdoor-learning" },
@@ -31,16 +31,31 @@ const WHY = [
 ];
 
 const STAFF = [
-  { initials: "SH", name: "Sana H.", role: "Founder & Lead Teacher", bg: "bg-sage" },
-  { initials: "RA", name: "Rabia A.", role: "Infant Room Lead", bg: "bg-rose" },
-  { initials: "BK", name: "Bilal K.", role: "Outdoor & Movement", bg: "bg-denim" },
-  { initials: "NF", name: "Nida F.", role: "Nutrition & Meals", bg: "bg-mustard" },
+  { initials: "JD", name: "Jhon Doe", role: "Founder & Lead Teacher", bg: "bg-sage" },
+  { initials: "JD", name: "Jhon Doe", role: "Infant Room Lead", bg: "bg-rose" },
+  { initials: "JD", name: "Jhon Doe", role: "Outdoor & Movement", bg: "bg-denim" },
+  { initials: "JD", name: "Jhon Doe", role: "Nutrition & Meals", bg: "bg-mustard" },
 ];
 
 const NEWS = [
-  { tag: "Tips", emoji: "🎒", bg: "#E7EFE6", title: "5 ways to help your child settle in" },
-  { tag: "Learning", emoji: "🧩", bg: "#FBEAE3", title: "Why outdoor play matters most" },
-  { tag: "News", emoji: "🌼", bg: "#FEF3DC", title: "Meet our newest toddler room" },
+  { 
+    tag: "Tips", 
+    img: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&h=200&fit=crop", 
+    bg: "#E7EFE6", 
+    title: "5 ways to help your child settle in" 
+  },
+  { 
+    tag: "Learning", 
+    img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=200&h=200&fit=crop", 
+    bg: "#FBEAE3", 
+    title: "Why outdoor play matters most" 
+  },
+  { 
+    tag: "News", 
+    img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=200&h=200&fit=crop", 
+    bg: "#FEF3DC", 
+    title: "Meet our newest toddler room" 
+  },
 ];
 
 const QUICK_LINKS = [
@@ -142,9 +157,9 @@ export default function HomePage() {
             </Button>
           </div>
           <div className="relative h-[220px] max-w-[320px] mx-auto lg:max-w-none" aria-hidden="true">
-            <div className="absolute w-[150px] h-[150px] rounded-2xl bg-sage top-2.5 left-10 -rotate-6 shadow-lg flex items-center justify-center font-display font-bold text-3xl text-white">A</div>
-            <div className="absolute w-[130px] h-[130px] rounded-2xl bg-rose top-[110px] left-[160px] rotate-6 shadow-lg flex items-center justify-center font-display font-bold text-3xl text-white">B</div>
-            <div className="absolute w-[110px] h-[110px] rounded-2xl bg-mustard top-0 left-[220px] -rotate-3 shadow-lg flex items-center justify-center font-display font-bold text-3xl text-ink">C</div>
+            <div className="absolute top-2.5 left-10 h-[150px] shadow-lg bg-sage rounded-md w-[150px] -rotate-6 bg-[url(/images/sun.png)] bg-contain bg-center bg-no-repeat" />
+            <div className="absolute top-[100px] left-[150px] shadow-lg bg-rose rounded-md h-[130px] w-[130px] rotate-6 bg-[url(/images/butterfly.png)] bg-contain bg-center bg-no-repeat" />
+            <div className="absolute top-0 left-[205px] h-[110px] w-[110px] bg-mustard -rotate-3 shadow-lg rounded-md bg-[url(/images/bird.png)] bg-contain bg-center bg-no-repeat" />
           </div>
         </div>
 
@@ -258,11 +273,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {NEWS.map((n) => (
               <div key={n.title} className="rounded-2xl border border-line bg-card overflow-hidden">
-                <div className="h-[130px] flex items-center justify-center text-4xl relative" style={{ background: n.bg }}>
+                <div className="h-[200px] flex items-center justify-center text-4xl relative" style={{ background: n.bg }}>
+                  <Image src={n.img} alt={n.tag} loading="lazy" fill/>
                   <span className="absolute top-3 left-3 font-display text-[11px] uppercase tracking-wider bg-white px-2.5 py-1 rounded-full">
                     {n.tag}
                   </span>
-                  {n.emoji}
                 </div>
                 <div className="p-5">
                   <h3 className="text-[15.5px] mb-1.5">{n.title}</h3>

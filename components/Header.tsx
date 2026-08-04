@@ -22,11 +22,11 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm">
-      <div className="container flex items-center justify-between py-4">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm px-4 sm:px-6 md:px-10">
+      <div className="flex items-center justify-evenly py-6">
         <Link href="/" className="flex items-center gap-2.5 font-display text-lg font-bold">
-          <Image src={"/images/logo.png"} alt={"Logo"} priority width={50} height={50} className="size-10" />
-          Little Garden Gate Nursery
+          <Image src={"/images/logo.png"} alt={"Logo"} priority width={200} height={100} className="w-72" />
+          {/* Little Garden Gate Nursery */}
         </Link>
 
         <nav className="hidden lg:flex items-center gap-0.5 overflow-x-auto max-w-[640px]">

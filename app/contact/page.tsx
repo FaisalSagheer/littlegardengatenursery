@@ -24,14 +24,14 @@ export default function ContactPage() {
               <div className="w-[38px] h-[38px] rounded-xl bg-sage flex items-center justify-center text-white flex-none">📍</div>
               <div>
                 <strong className="block font-display text-[15px]">Visit us</strong>
-                <span className="text-ink-soft text-[14.5px]">14 Garden Lane</span>
+                <span className="text-ink-soft text-[14.5px]">St George's Church, Campden Hill, Aubrey Walk, London, UK</span>
               </div>
             </div>
             <div className="flex gap-3.5 items-start">
               <div className="w-[38px] h-[38px] rounded-xl bg-sage flex items-center justify-center text-white flex-none">📞</div>
               <div>
                 <strong className="block font-display text-[15px]">Call or WhatsApp</strong>
-                <span className="text-ink-soft text-[14.5px]">+44 0000 000000</span>
+                <span className="text-ink-soft text-[14.5px]">+44 7774 239579</span>
               </div>
             </div>
             <div className="flex gap-3.5 items-start">
