@@ -31,10 +31,10 @@ const WHY = [
 ];
 
 const STAFF = [
-  { initials: "JD", name: "Jhon Doe", role: "Founder & Lead Teacher", bg: "bg-sage" },
-  { initials: "JD", name: "Jhon Doe", role: "Infant Room Lead", bg: "bg-rose" },
-  { initials: "JD", name: "Jhon Doe", role: "Outdoor & Movement", bg: "bg-denim" },
-  { initials: "JD", name: "Jhon Doe", role: "Nutrition & Meals", bg: "bg-mustard" },
+  { initials: "RE", name: "Raneya Erikat", role: "Founder & Lead Teacher", bg: "bg-sage" },
+  { initials: "JS", name: "Jedida Sohrab", role: "Infant Room Lead", bg: "bg-rose" },
+  { initials: "R", name: "Erikat", role: "Outdoor & Movement", bg: "bg-denim" },
+  { initials: "S", name: "Sohrab", role: "Nutrition & Meals", bg: "bg-mustard" },
 ];
 
 const NEWS = [
