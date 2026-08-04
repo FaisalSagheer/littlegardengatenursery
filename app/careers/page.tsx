@@ -4,7 +4,7 @@ const PERKS = [
   { icon: "🌱", title: "Paid training", desc: "Early childhood certifications covered in your first 90 days." },
   { icon: "🕐", title: "Predictable hours", desc: "Set shifts, no last-minute schedule changes." },
   { icon: "🍽️", title: "Meals included", desc: "Free breakfast and lunch on every shift you work." },
-  { icon: "👶", title: "Staff discount", desc: "50% off enrollment if your own child attends Little Sprouts." },
+  { icon: "👶", title: "Staff discount", desc: "50% off enrollment if your own child attends Little Garden Gate." },
 ];
 
 const JOBS = [

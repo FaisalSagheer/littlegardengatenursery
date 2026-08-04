@@ -6,15 +6,14 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/amenities", label: "Amenities" },
-  { href: "/meals", label: "Meals & Snacks" },
-  { href: "/documents", label: "Documents" },
-  { href: "/careers", label: "Careers" },
   { href: "/fees", label: "Fees & Admission" },
+  { href: "/meals", label: "Meals & Snacks" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -26,13 +25,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm">
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2.5 font-display text-lg font-bold">
-          <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <circle cx="20" cy="20" r="19" fill="#7E9B7E" />
-            <path d="M20 27V15" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" />
-            <path d="M20 18C20 13 15 12 12 13C12 17 15 20 20 18Z" fill="#E8AF3F" />
-            <path d="M20 18C20 13 25 12 28 13C28 17 25 20 20 18Z" fill="#D98A93" />
-          </svg>
-          Little Sprouts
+          <Image src={"/images/logo.png"} alt={"Logo"} priority width={50} height={50} className="size-10" />
+          Little Garden Gate Nursery
         </Link>
 
         <nav className="hidden lg:flex items-center gap-0.5 overflow-x-auto max-w-[640px]">

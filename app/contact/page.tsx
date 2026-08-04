@@ -38,7 +38,7 @@ export default function ContactPage() {
               <div className="w-[38px] h-[38px] rounded-xl bg-sage flex items-center justify-center text-white flex-none">✉️</div>
               <div>
                 <strong className="block font-display text-[15px]">Email</strong>
-                <span className="text-ink-soft text-[14.5px]">hello@littlesprouts.example</span>
+                <span className="text-ink-soft text-[14.5px]">info@littlegardengatenursery.com</span>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
           dark
           submitLabel="Send Message"
           fields={[
-            { id: "name", label: "Your name", type: "text", placeholder: "Amina Raza", required: true },
+            { id: "name", label: "Your name", type: "text", placeholder: "Jhon Doe", required: true },
             { id: "child_age", label: "Child's age", type: "text", placeholder: "e.g. 2 years old", required: true },
             { id: "email", label: "Email", type: "email", placeholder: "you@email.com", required: true },
             { id: "message", label: "Message", type: "textarea", placeholder: "Tell us a bit about what you're looking for..." },

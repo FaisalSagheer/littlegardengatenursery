@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="border-t border-line">
       <div className="container flex flex-wrap items-center justify-between gap-3.5 py-8">
         <p className="text-[13.5px] text-ink-soft">
-          © {new Date().getFullYear()} Little Sprouts Nursery. All rights reserved.
+          © {new Date().getFullYear()} Little Garden Gate Nursery. All rights reserved.
         </p>
         <p className="text-[13.5px] text-ink-soft">Designed with care.</p>
       </div>

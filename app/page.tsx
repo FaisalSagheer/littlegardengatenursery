@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import EnquiryForm from "@/components/EnquiryForm";
+import heroBanner from "@/public/images/hero-banner.jpg";
 
 const FEATURES = [
   { icon: "🌿", bg: "#E7EFE6", title: "Outdoor Play", go: "Outdoor learning →", href: "/about#outdoor-learning" },
-  { icon: "🎵", bg: "#FEF3DC", title: "Music & Movement", go: "See amenities →", href: "/amenities" },
+  { icon: "🎵", bg: "#FEF3DC", title: "Music & Movement", go: "See amenities →", href: "/about#amenities" },
   { icon: "🍎", bg: "#FBEAE3", title: "Healthy Meals", go: "View menu →", href: "/meals" },
   { icon: "💛", bg: "#E6EEF3", title: "Caring Teachers", go: "Meet the team →", href: "/about" },
 ];
@@ -43,7 +45,7 @@ const NEWS = [
 
 const QUICK_LINKS = [
   { href: "/about", label: "📖 About Us" },
-  { href: "/amenities", label: "🧸 Amenities" },
+  { href: "/about#amenities", label: "🧸 Amenities" },
   { href: "/meals", label: "🍎 Meals & Snacks" },
   { href: "/documents", label: "📋 Documents" },
   { href: "/fees", label: "💳 Fees & Admission" },
@@ -55,66 +57,46 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <div className="relative bg-gradient-to-b from-[#EFEAD8] to-[#E7E1C8]">
-        <div className="container grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-11 items-center py-11 lg:pb-24">
-          <div>
-            <span className="inline-flex items-center gap-2 font-display text-[13px] uppercase tracking-wider text-sage-dark">
-              <span className="w-[7px] h-[7px] rounded-full bg-mustard inline-block" />
-              Nursery &amp; Early Learning · Ages 1–5
-            </span>
-            <h1 className="text-[34px] sm:text-5xl lg:text-[54px] my-3.5 mb-5">
-              Small steps,
-              <br />
-              big beginnings.
-            </h1>
-            <p className="text-lg text-ink-soft max-w-[46ch] mb-6">
-              A warm, unhurried place for your child to play, wonder, and grow — with small
-              groups, a calm daily rhythm, and teachers who know your kid by name.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <Link href="/contact">Book a Tour</Link>
-              </Button>
-              <Button asChild variant="ghost" size="lg">
-                <Link href="/fees">See Sessions</Link>
-              </Button>
+      <div className="relative overflow-hidden">
+        <div className="relative h-[520px] sm:h-[560px] lg:h-[600px]">
+          <Image
+            src={heroBanner}
+            alt="Little Garden Gate Nursery — a child waving hello at the garden gate"
+            fill
+            priority
+            placeholder="blur"
+            className="object-cover object-center"
+          />
+          {/* darken/blend overlay for text legibility + fade into page at the bottom */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/10 to-[#FBF6EC]" />
+
+          <div className="absolute inset-0 flex items-center justify-center px-7 pb-10">
+            <div className="max-w-[640px] text-center bg-white/85 backdrop-blur-sm rounded-[28px] px-7 sm:px-10 py-8 sm:py-10 shadow-xl">
+              <span className="inline-flex items-center gap-2 font-display text-[13px] uppercase tracking-wider text-sage-dark">
+                <span className="w-[7px] h-[7px] rounded-full bg-mustard inline-block" />
+                Nursery &amp; Early Learning · Ages 1–5
+              </span>
+              <h1 className="text-[32px] sm:text-[44px] lg:text-[50px] my-3.5 mb-4">
+                Small steps,
+                <br />
+                big beginnings.
+              </h1>
+              <p className="text-base sm:text-lg text-ink-soft max-w-[46ch] mx-auto mb-6">
+                A warm, unhurried place for your child to play, wonder, and grow — with small
+                groups, a calm daily rhythm, and teachers who know your kid by name.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <Button asChild size="lg">
+                  <Link href="/contact">Book a Tour</Link>
+                </Button>
+                <Button asChild variant="ghost" size="lg">
+                  <Link href="/fees">See Sessions</Link>
+                </Button>
+              </div>
             </div>
           </div>
-          <div className="relative">
-            <span className="absolute top-1.5 right-[10%] text-2xl">✨</span>
-            <span className="absolute bottom-5 left-[2%] text-2xl">🌟</span>
-            <svg viewBox="0 0 400 260" className="w-full h-auto max-h-[300px]" aria-hidden="true">
-              <line x1="40" y1="220" x2="360" y2="220" stroke="#DCD3C0" strokeWidth="2" strokeDasharray="4 8" />
-              <g>
-                <line x1="95" y1="150" x2="150" y2="150" stroke="#2E2A24" strokeWidth="3" strokeLinecap="round" />
-                <circle cx="80" cy="95" r="22" fill="#7E9B7E" />
-                <rect x="58" y="118" width="44" height="70" rx="20" fill="#7E9B7E" />
-                <line x1="70" y1="185" x2="65" y2="220" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-                <line x1="92" y1="185" x2="98" y2="220" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-              </g>
-              <g>
-                <circle cx="180" cy="80" r="26" fill="#6488A6" />
-                <rect x="153" y="106" width="54" height="90" rx="22" fill="#6488A6" />
-                <line x1="165" y1="196" x2="160" y2="230" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-                <line x1="195" y1="196" x2="200" y2="230" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-              </g>
-              <g>
-                <line x1="207" y1="150" x2="255" y2="150" stroke="#2E2A24" strokeWidth="3" strokeLinecap="round" />
-                <circle cx="270" cy="98" r="21" fill="#D98A93" />
-                <rect x="249" y="120" width="42" height="66" rx="20" fill="#D98A93" />
-                <line x1="260" y1="184" x2="256" y2="218" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-                <line x1="280" y1="184" x2="285" y2="218" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-              </g>
-              <g>
-                <line x1="292" y1="152" x2="330" y2="152" stroke="#2E2A24" strokeWidth="3" strokeLinecap="round" />
-                <circle cx="342" cy="105" r="18" fill="#E8AF3F" />
-                <rect x="324" y="122" width="36" height="58" rx="18" fill="#E8AF3F" />
-                <line x1="332" y1="178" x2="328" y2="210" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-                <line x1="350" y1="178" x2="354" y2="210" stroke="#2E2A24" strokeWidth="4" strokeLinecap="round" />
-              </g>
-            </svg>
-          </div>
         </div>
+
         <div className="h-[52px] -mt-[3px] leading-[0]">
           <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-full block">
             <path d="M0,32 C240,64 480,0 720,16 C960,32 1200,64 1440,32 L1440,60 L0,60 Z" fill="#FBF6EC" />
@@ -293,7 +275,7 @@ export default function HomePage() {
 
         {/* QUICK LINKS */}
         <div className="pb-20">
-          <h2 className="text-xl text-center mb-5">Everything About Little Sprouts</h2>
+          <h2 className="text-xl text-center mb-5">Everything About Little Garden Gate</h2>
           <div className="flex flex-wrap gap-2.5 justify-center">
             {QUICK_LINKS.map((l) => (
               <Link

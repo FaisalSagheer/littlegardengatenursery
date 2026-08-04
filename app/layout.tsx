@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Fredoka, Nunito } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ReactLenis from "lenis/react";
+import "./globals.css";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -17,7 +18,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Little Sprouts Nursery",
+  title: "Little Garden Gate Nursery",
   description: "A warm, unhurried nursery for ages 1–5.",
 };
 
@@ -26,7 +27,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${fredoka.variable} ${nunito.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Header />
-        <main className="flex-1">{children}</main>
+        <ReactLenis root>
+          <main className="flex-1">{children}</main>
+        </ReactLenis>
         <Footer />
       </body>
     </html>

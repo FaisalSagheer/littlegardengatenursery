@@ -1,4 +1,3 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const APPROACH = [
   { icon: "🌱", title: "Play-led learning", desc: "Children learn best through hands-on play, not worksheets or drills." },
@@ -11,17 +10,17 @@ const CURRICULUM = ["EYFS", "Reggio Emilia", "Steiner", "Montessori", "Forest Sc
 const CHIP_COLORS = ["bg-sage", "bg-denim", "bg-rose", "bg-mustard text-ink", "bg-[#8C6E4E]"];
 
 const TIMELINE = [
-  { year: "2016", title: "One room, eight children", desc: "Little Sprouts opens in a converted house with a single mixed-age classroom." },
+  { year: "2016", title: "One room, eight children", desc: "Little Garden Gate opens in a converted house with a single mixed-age classroom." },
   { year: "2019", title: "The garden classroom", desc: "We build our outdoor play yard and start growing vegetables the children eat at lunch." },
   { year: "2022", title: "Second room opens", desc: "A dedicated infant room lets us welcome children from twelve months old." },
   { year: "Today", title: "Four rooms, one philosophy", desc: "Still capped at 8 children per teacher — growth was never the goal, care was." },
 ];
 
 const TEAM = [
-  { initials: "SH", name: "Sana H.", role: "Founder & Lead Teacher", bg: "bg-sage" },
-  { initials: "RA", name: "Rabia A.", role: "Infant Room Lead", bg: "bg-rose" },
-  { initials: "BK", name: "Bilal K.", role: "Outdoor & Movement", bg: "bg-denim" },
-  { initials: "NF", name: "Nida F.", role: "Nutrition & Meals", bg: "bg-mustard text-ink" },
+  { initials: "JD", name: "Jhon Doe", role: "Founder & Lead Teacher", bg: "bg-sage" },
+  { initials: "JD", name: "Jhon Doe", role: "Infant Room Lead", bg: "bg-rose" },
+  { initials: "JD", name: "Jhon Doe", role: "Outdoor & Movement", bg: "bg-denim" },
+  { initials: "JD", name: "Jhon Doe", role: "Nutrition & Meals", bg: "bg-mustard text-ink" },
 ];
 
 const OUTDOOR = [
@@ -48,6 +47,42 @@ const OUTDOOR = [
   },
 ];
 
+const CUBBIES = [
+  { bg: "#E7EFE6", icon: "🌿", title: "Outdoor Play Yard", desc: "A shaded garden with a vegetable patch, sandpit, and climbing frame for gross-motor play, rain or shine.", tag: "Daily, 10–11am" },
+  { bg: "#FBEAE3", icon: "📚", title: "Reading Corner", desc: "Floor cushions and a rotating shelf of picture books, sorted low enough for even the youngest to reach.", tag: "Open all day" },
+  { bg: "#FEF3DC", icon: "🎨", title: "Art Studio", desc: "Paint, clay, and collage supplies that wash out — because the mess is the point, not the mistake.", tag: "Daily, 2–3pm" },
+  { bg: "#E6EEF3", icon: "🌙", title: "Nap Room", desc: "A dim, quiet room with individual cots and white noise, kept on the same nap schedule every day.", tag: "12:30–2:30pm" },
+  { bg: "#E7EFE6", icon: "🍎", title: "Meal Program", desc: "Home-style meals cooked fresh on-site each morning, with menus posted a week ahead for allergies.", tag: "Breakfast, lunch, snack" },
+  { bg: "#FBEAE3", icon: "🎵", title: "Music & Movement", desc: "A soft-floored room for singing circles, simple instruments, and dancing off the morning energy.", tag: "Daily, 9–9:30am" },
+];
+
+const DAY: [string, string][] = [
+  ["8:00", "Drop-off & free play"],
+  ["9:00", "Music & movement"],
+  ["10:00", "Outdoor yard time"],
+  ["12:00", "Lunch together"],
+  ["12:30", "Rest & nap"],
+  ["2:30", "Story & quiet play"],
+  ["3:00", "Art studio time"],
+  ["4:00", "Afternoon snack"],
+  ["4:30", "Free play & garden"],
+  ["5:30", "Wind-down & pickup"],
+];
+
+const SAFETY = [
+  { icon: "🔐", title: "Secure entry", desc: "Keypad entry and sign-in/sign-out for every drop-off and pickup." },
+  { icon: "📹", title: "CCTV monitored", desc: "All play and rest rooms are monitored during opening hours." },
+  { icon: "🩹", title: "First-aid trained", desc: "At least one paediatric first-aid trained staff member on-site at all times." },
+  { icon: "🧴", title: "Cleaned daily", desc: "Toys, cots, and surfaces are sanitized every evening after closing." },
+];
+
+const ENRICHMENT = [
+  { icon: "🧘", title: "Yoga", desc: "Gentle movement and breathing to help children settle and focus." },
+  { icon: "🧁", title: "Cooking & Baking", desc: "Simple, hands-on recipes that build fine motor skills and confidence." },
+  { icon: "💃", title: "Doodle Dance", desc: "Free-movement dance sessions that mix music, art, and imagination." },
+  { icon: "🇪🇸", title: "Spanish", desc: "Playful, song-based introduction to a second language each week." },
+];
+
 export default function AboutPage() {
   return (
     <div className="container py-14 sm:py-16">
@@ -55,7 +90,7 @@ export default function AboutPage() {
         <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">Our Story</span>
         <h1 className="text-[30px] sm:text-[46px] my-3.5 mb-5">Started at a kitchen table, not a boardroom.</h1>
         <p className="text-[17px] text-ink-soft">
-          Little Sprouts began in 2016 when two former kindergarten teachers got tired of watching
+          Little Garden Gate began in 2016 when two former kindergarten teachers got tired of watching
           good children&apos;s programs get bigger, louder, and less personal. So they opened one
           small room with eight cubbies and a promise: every child would be known, not just tracked.
         </p>
@@ -163,6 +198,79 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* AMENITIES (merged from the former dedicated page) */}
+      <div id="amenities" className="scroll-mt-24 mb-11">
+        <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">What&apos;s Here</span>
+        <h2 className="text-2xl sm:text-[32px] my-3.5 mb-5 max-w-[720px]">Every corner has a job to do.</h2>
+        <p className="text-ink-soft text-[17px] max-w-[720px] mb-9">
+          Each room is built around one kind of play, so children learn to move between quiet and
+          active, messy and calm, on their own.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-2 border-ink rounded-2xl overflow-hidden mb-10">
+          {CUBBIES.map((c, i) => (
+            <div
+              key={c.title}
+              className={`p-7 relative bg-card border-ink ${(i + 1) % 3 !== 0 ? "lg:border-r-2" : ""} ${
+                i < 3 ? "border-b-2 lg:border-b-2" : "border-b-2 lg:border-b-0"
+              }`}
+            >
+              <div className="w-3.5 h-3.5 rounded-full bg-ink absolute top-4 left-6" />
+              <div className="w-[46px] h-[46px] rounded-xl flex items-center justify-center text-[22px] mt-5 mb-4" style={{ background: c.bg }}>
+                {c.icon}
+              </div>
+              <h3 className="text-lg mb-1.5">{c.title}</h3>
+              <p className="text-ink-soft text-[14.5px]">{c.desc}</p>
+              <span className="inline-block mt-4 font-display text-[11px] uppercase tracking-wider text-sage-dark bg-[#EEF3EA] px-2.5 py-1 rounded-full">
+                {c.tag}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <div className="bg-[#F1E9D4] rounded-3xl p-8 sm:p-9 mb-10">
+          <h3 className="text-xl mb-5">A typical day</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+            {DAY.map(([time, label]) => (
+              <div key={time} className="text-sm">
+                <span className="font-display font-semibold text-sage-dark block mb-0.5">{time}</span>
+                {label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-10">
+          <h3 className="text-xl mb-5">Safety &amp; care</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {SAFETY.map((s) => (
+              <div key={s.title} className="rounded-2xl border border-line bg-card p-5">
+                <div className="text-xl mb-2">{s.icon}</div>
+                <h4 className="text-[15px] mb-1">{s.title}</h4>
+                <p className="text-[13.5px] text-ink-soft">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-xl mb-2">Enrichment activities</h3>
+          <p className="text-ink-soft text-[15px] mb-5">
+            Beyond the daily routine, weekly specialist sessions round out each child&apos;s week —
+            because quality care means a rich curriculum, not just supervised hours.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {ENRICHMENT.map((e) => (
+              <div key={e.title} className="rounded-2xl border border-line bg-card p-5">
+                <div className="text-xl mb-2">{e.icon}</div>
+                <h4 className="text-[15px] mb-1">{e.title}</h4>
+                <p className="text-[13.5px] text-ink-soft">{e.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* TEAM */}
       <div className="mb-11">
         <h2 className="text-2xl mb-1.5">Our Team — the people your child will actually know</h2>
@@ -189,7 +297,7 @@ export default function AboutPage() {
         <div className="w-[38px] h-[38px] rounded-xl bg-sage flex items-center justify-center text-base flex-none">🛡️</div>
         <p className="text-[14.5px] text-ink-soft">
           <strong className="block font-display text-ink mb-0.5">Registered &amp; inspected</strong>
-          Little Sprouts is a registered childcare provider, DBS-checked staff throughout,
+          Little Garden Gate is a registered childcare provider, DBS-checked staff throughout,
           first-aid trained teachers in every room, and inspected annually against national
           early-years standards.
         </p>
