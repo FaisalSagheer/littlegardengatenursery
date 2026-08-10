@@ -4,14 +4,14 @@ const PERKS = [
   { icon: "🌱", title: "Paid training", desc: "Early childhood certifications covered in your first 90 days." },
   { icon: "🕐", title: "Predictable hours", desc: "Set shifts, no last-minute schedule changes." },
   { icon: "🍽️", title: "Meals included", desc: "Free breakfast and lunch on every shift you work." },
-  { icon: "👶", title: "Staff discount", desc: "50% off enrollment if your own child attends Little Garden Gate." },
+  { icon: "👶", title: "Staff discount", desc: "upto 20% off enrollment if your own child attends Little Garden Gate." },
 ];
 
 const JOBS = [
   { title: "Assistant Teacher, Infant Room", meta: "Full-time · Monday–Friday", desc: "Support our lead teacher with feeding, nap routines, and one-on-one play for children aged 1–2.", rotate: "-rotate-1" },
   { title: "Lead Teacher, Preschool Room", meta: "Full-time · ECE certification required", desc: "Plan and lead daily activities for a group of up to 8 children aged 3–5.", rotate: "rotate-1" },
-  { title: "Kitchen Assistant", meta: "Part-time · Mornings", desc: "Help prepare and serve breakfast, lunch, and snacks, and manage allergen labeling.", rotate: "rotate-[1.5deg]" },
-  { title: "Front Desk & Admissions", meta: "Full-time · Weekdays", desc: "First point of contact for families touring, enrolling, or dropping off each morning.", rotate: "-rotate-[1.5deg]" },
+  // { title: "Kitchen Assistant", meta: "Part-time · Mornings", desc: "Help prepare and serve breakfast, lunch, and snacks, and manage allergen labeling.", rotate: "rotate-[1.5deg]" },
+  // { title: "Front Desk & Admissions", meta: "Full-time · Weekdays", desc: "First point of contact for families touring, enrolling, or dropping off each morning.", rotate: "-rotate-[1.5deg]" },
 ];
 
 const PROCESS = [

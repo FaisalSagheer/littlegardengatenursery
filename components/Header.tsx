@@ -27,6 +27,9 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2.5 font-display text-lg font-bold">
           <Image src={"/images/logo.png"} alt={"Logo"} priority width={200} height={100} className="w-72" />
           {/* Little Garden Gate Nursery */}
+          {/* <video className="h-10" autoPlay muted loop>
+            <source src="/images/Animated_logo.mp4"/>
+          </video> */}
         </Link>
 
         <nav className="hidden lg:flex items-center gap-0.5 overflow-x-auto max-w-[640px]">

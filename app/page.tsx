@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import EnquiryForm from "@/components/EnquiryForm";
 import heroBanner from "@/public/images/hero-banner.jpg";
 import Image from "next/image";
 
@@ -11,13 +10,6 @@ const FEATURES = [
   { icon: "💛", bg: "#E6EEF3", title: "Caring Teachers", go: "Meet the team →", href: "/about" },
 ];
 
-const STATS = [
-  { num: "18", label: "Qualified Teachers" },
-  { num: "10", label: "Years of Experience" },
-  { num: "120", label: "Children Enrolled" },
-  { num: "4", label: "Classrooms" },
-];
-
 const SESSIONS = [
   { time: "8:00am – 3:00pm", title: "Extended Half Day", price: "£85", desc: "Longer morning & afternoon sessions with tasty food and snacks.", min: "Minimum 2 days a week" },
   { time: "8:00am – 6:00pm", title: "Full Day", price: "£120", desc: "A full day of fun, learning, and delicious meals.", min: "Minimum 3 days a week", featured: true },
@@ -25,8 +17,8 @@ const SESSIONS = [
 ];
 
 const WHY = [
-  { num: "01", icon: "👩‍🏫", title: "Small Groups", desc: "No more than 8 children per teacher, so every child gets seen and heard." },
-  { num: "02", icon: "🎓", title: "Experienced Teachers", desc: "Most of our teachers have stayed with us for over three years." },
+  { num: "01", icon: "👩‍🏫", title: "Small Groups", desc: "We follow the required staff-to-child ratios, so every child gets seen and heard." },
+  { num: "02", icon: "🎓", title: "Experienced Teachers", desc: "Our team is experienced, dedicated, and passionate about early years care." },
   { num: "03", icon: "😊", title: "Happy Children", desc: "A predictable daily rhythm that helps children feel secure enough to explore." },
 ];
 
@@ -40,19 +32,19 @@ const STAFF = [
 const NEWS = [
   { 
     tag: "Tips", 
-    img: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=200&h=200&fit=crop", 
+    img: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=400&fit=crop", 
     bg: "#E7EFE6", 
     title: "5 ways to help your child settle in" 
   },
   { 
     tag: "Learning", 
-    img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=200&h=200&fit=crop", 
+    img: "https://images.unsplash.com/photo-1476703993599-0035a21b17a9?w=300&h=200&fit=crop", 
     bg: "#FBEAE3", 
     title: "Why outdoor play matters most" 
   },
   { 
     tag: "News", 
-    img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=200&h=200&fit=crop", 
+    img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=300&h=200&fit=crop", 
     bg: "#FEF3DC", 
     title: "Meet our newest toddler room" 
   },
@@ -163,16 +155,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* STATS */}
-        <div className="bg-sage rounded-[28px] p-7 mb-16 grid grid-cols-2 lg:grid-cols-4 gap-5 text-center">
-          {STATS.map((s) => (
-            <div key={s.label}>
-              <div className="font-display font-bold text-3xl text-white">{s.num}</div>
-              <div className="text-[#EAF1E9] text-[13.5px] mt-1">{s.label}</div>
-            </div>
-          ))}
-        </div>
-
         {/* SESSIONS */}
         <div className="pb-3.5">
           <div className="text-center mb-8">
@@ -217,34 +199,8 @@ export default function HomePage() {
           ))}
         </div>
 
-        {/* ENQUIRY */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-11 items-center mb-20">
-          <div>
-            <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">Get Started</span>
-            <h2 className="text-2xl lg:text-[32px] my-2.5 mb-3.5">Join our nursery family.</h2>
-            <p className="text-ink-soft text-[15.5px] max-w-[42ch] mb-6">
-              Tell us a little about your child and we&apos;ll be in touch to arrange a tour and
-              talk through sessions that fit your schedule.
-            </p>
-            <Button asChild>
-              <Link href="/documents">See Requirement Forms</Link>
-            </Button>
-          </div>
-          <EnquiryForm
-            submitLabel="Submit Enquiry"
-            fields={[
-              { id: "guardian_name", label: "Guardian Name", type: "text", placeholder: "Your name", required: true, half: true },
-              { id: "phone", label: "Phone Number", type: "tel", placeholder: "+44 ...", required: true, half: true },
-              { id: "email", label: "Email", type: "email", placeholder: "you@email.com", required: true },
-              { id: "child_name", label: "Child Name", type: "text", placeholder: "Child's name", half: true },
-              { id: "child_age", label: "Age of Child", type: "text", placeholder: "e.g. 2 years", half: true },
-              { id: "message", label: "Message", type: "textarea", placeholder: "Tell us a bit about what you're looking for..." },
-            ]}
-          />
-        </div>
-
         {/* STAFF */}
-        <div className="pb-2.5">
+        {/* <div className="pb-2.5">
           <div className="text-center mb-8">
             <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">Our Team</span>
             <h2 className="text-[26px] mt-2">Most dedicated staff for your child</h2>
@@ -262,7 +218,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* NEWS */}
         <div className="pb-2.5">

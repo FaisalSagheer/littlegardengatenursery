@@ -24,20 +24,6 @@ const APPROACH = [
 const CURRICULUM = ["EYFS", "Reggio Emilia", "Steiner", "Montessori", "Forest School"];
 const CHIP_COLORS = ["bg-sage", "bg-denim", "bg-rose", "bg-mustard text-ink", "bg-[#8C6E4E]"];
 
-const TIMELINE = [
-  { year: "2016", title: "One room, eight children", desc: "Little Garden Gate opens in a converted house with a single mixed-age classroom." },
-  { year: "2019", title: "The garden classroom", desc: "We build our outdoor play yard and start growing vegetables the children eat at lunch." },
-  { year: "2022", title: "Second room opens", desc: "A dedicated infant room lets us welcome children from twelve months old." },
-  { year: "Today", title: "Four rooms, one philosophy", desc: "Still capped at 8 children per teacher — growth was never the goal, care was." },
-];
-
-const TEAM = [
-  { initials: "RE", name: "Raneya Erikat", role: "Founder & Lead Teacher", bg: "bg-sage" },
-  { initials: "JS", name: "Jedida Sohrab", role: "Infant Room Lead", bg: "bg-rose" },
-  { initials: "R", name: "Erikat", role: "Outdoor & Movement", bg: "bg-denim" },
-  { initials: "S", name: "Sohrab", role: "Nutrition & Meals", bg: "bg-mustard" },
-];
-
 const OUTDOOR = [
   {
     img: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=300&fit=crop",
@@ -67,43 +53,37 @@ const CUBBIES = [
     img: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=200&h=200&fit=crop", 
     bg: "#E7EFE6", 
     title: "Outdoor Play Yard", 
-    desc: "A shaded garden with a vegetable patch, sandpit, and climbing frame for gross-motor play, rain or shine.", 
-    tag: "Daily, 10–11am" 
+    desc: "A shaded garden with a vegetable patch, sandpit, and climbing frame for gross-motor play, rain or shine." 
   },
   { 
     img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=200&h=200&fit=crop", 
     bg: "#FBEAE3", 
     title: "Reading Corner", 
-    desc: "Floor cushions and a rotating shelf of picture books, sorted low enough for even the youngest to reach.", 
-    tag: "Open all day" 
+    desc: "Floor cushions and a rotating shelf of picture books, sorted low enough for even the youngest to reach." 
   },
   { 
     img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=200&h=200&fit=crop", 
     bg: "#FEF3DC", 
     title: "Art Studio", 
-    desc: "Paint, clay, and collage supplies that wash out — because the mess is the point, not the mistake.", 
-    tag: "Daily, 2–3pm" 
+    desc: "Paint, clay, and collage supplies that wash out — because the mess is the point, not the mistake." 
   },
   { 
     img: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=200&h=200&fit=crop", 
     bg: "#E6EEF3", 
-    title: "Nap Room", 
-    desc: "A dim, quiet room with individual cots and white noise, kept on the same nap schedule every day.", 
-    tag: "12:30–2:30pm" 
+    title: "Nap & Rest Corner", 
+    desc: "A dim, quiet corner with individual cots and white noise, kept on the same nap schedule every day." 
   },
   { 
     img: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=200&h=200&fit=crop", 
     bg: "#E7EFE6", 
     title: "Meal Program", 
-    desc: "Home-style meals cooked fresh on-site each morning, with menus posted a week ahead for allergies.", 
-    tag: "Breakfast, lunch, snack" 
+    desc: "Home-style meals cooked fresh on-site each morning, with menus posted a week ahead for allergies." 
   },
   { 
     img: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=200&h=200&fit=crop", 
     bg: "#FBEAE3", 
     title: "Music & Movement", 
-    desc: "A soft-floored room for singing circles, simple instruments, and dancing off the morning energy.", 
-    tag: "Daily, 9–9:30am" 
+    desc: "A soft-floored corner for singing circles, simple instruments, and dancing off the morning energy." 
   },
 ];
 
@@ -161,8 +141,8 @@ const ENRICHMENT = [
   },
   { 
     img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop", 
-    title: "Spanish", 
-    desc: "Playful, song-based introduction to a second language each week." 
+    title: "Foreign Languages", 
+    desc: "Playful, song-based introduction to a new language each week." 
   },
 ];
 
@@ -228,19 +208,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* TIMELINE */}
-      <div className="mt-14 mb-11">
-        {TIMELINE.map((t, i) => (
-          <div key={t.year} className={`grid grid-cols-[100px_1fr] sm:grid-cols-[120px_1fr] gap-4 sm:gap-6 py-6 border-line ${i === 0 ? "" : "border-t"}`}>
-            <div className="font-display font-semibold text-sage-dark text-[15px]">{t.year}</div>
-            <div>
-              <h3 className="text-[17px] mb-1">{t.title}</h3>
-              <p className="text-ink-soft text-[15px]">{t.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* OUTDOOR LEARNING */}
       <div id="outdoor-learning" className="scroll-mt-24 mb-11">
         <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">Outdoor Learning</span>
@@ -272,25 +239,6 @@ export default function AboutPage() {
             </div>
           ))}
         </div>
-
-        <div className="mt-9 bg-[#EEF2E8] rounded-3xl p-8 sm:p-10 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-7 items-center">
-          <div>
-            <span className="font-display text-[13px] uppercase tracking-wider text-sage-dark">Growing Through Nature</span>
-            <h3 className="text-2xl my-2 mb-3">An introduction to Forest School.</h3>
-            <p className="text-ink-soft text-[15px]">
-              With roots in Scandinavian outdoor education, Forest School places nature at the
-              centre of discovery. Children are encouraged to explore, take measured risks, and
-              build independence in a safe, supportive environment.
-            </p>
-          </div>
-          <div className="h-[180px] rounded-2xl overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=360&fit=crop" 
-              alt="Forest School" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
       </div>
 
       {/* AMENITIES */}
@@ -316,9 +264,6 @@ export default function AboutPage() {
               </div>
               <h3 className="text-lg mb-1.5">{c.title}</h3>
               <p className="text-ink-soft text-[14.5px]">{c.desc}</p>
-              <span className="inline-block mt-4 font-display text-[11px] uppercase tracking-wider text-sage-dark bg-[#EEF3EA] px-2.5 py-1 rounded-full">
-                {c.tag}
-              </span>
             </div>
           ))}
         </div>
@@ -371,25 +316,12 @@ export default function AboutPage() {
       </div>
 
       {/* TEAM */}
-      <div className="mb-11">
+      {/* <div className="mb-11">
         <h2 className="text-2xl mb-1.5">Our Team — the people your child will actually know</h2>
         <p className="text-ink-soft mb-7">
-          Every teacher here has stayed longer than the industry average — familiar faces matter to little ones.
+          Every teacher here is familiar and dedicated — familiar faces matter to little ones.
         </p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {TEAM.map((t) => (
-            <div key={t.name} className="rounded-2xl overflow-hidden text-center bg-card border border-line">
-              <div className={`aspect-square flex items-center justify-center font-display font-bold text-2xl text-white ${t.bg}`}>
-                {t.initials}
-              </div>
-              <div className="py-3.5 px-2.5">
-                <div className="font-display font-semibold text-[15px]">{t.name}</div>
-                <div className="text-[13px] text-ink-soft">{t.role}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      </div> */}
 
       {/* REGISTERED NOTE */}
       <div className="rounded-2xl border border-line bg-card p-6 flex gap-4 items-start">

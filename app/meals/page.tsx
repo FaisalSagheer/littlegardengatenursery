@@ -11,7 +11,7 @@ const MENU = [
 const NOTES = [
   { title: "Allergy-aware kitchen", desc: "Every dish is clearly labelled for common allergens. Suitable substitutes are always available on request at no extra cost." },
   { title: "No added sugar before 2", desc: "Meals for our under-twos contain no added sugar or salt, in line with NHS and Early Years Foundation Stage guidance." },
-  { title: "Bring your own if you prefer", desc: "We’re happy to warm and serve home-packed lunches alongside our menu — just label the container clearly with your child’s name." },
+  { title: "if you prefer", desc: "We’re happy to warm and serve home-packed lunches alongside our menu — just label the container clearly with your child’s name." },
 ];
 
 const PHILOSOPHY = [
@@ -22,14 +22,31 @@ const PHILOSOPHY = [
 ];
 
 const FAQS = [
-  { q: "Will my child’s meals be provided?", a: "Yes — breakfast, lunch and two snacks are included in every session at no extra cost. All food is freshly prepared in our on-site kitchen each day." },
-  { q: "Who provides the food?", a: "All meals are cooked in-house by our own kitchen team using fresh ingredients delivered daily. Nothing is outsourced or reheated from an external supplier." },
-  { q: "Do you provide formula milk?", a: "We can prepare formula using milk that you supply, following your written instructions. Please discuss your preferred brand and feeding schedule with your child’s key person before their start date." },
-  { q: "Can I provide expressed breast milk?", a: "Yes. Please bring clearly labelled bottles with your child’s name and the date expressed. Our team will store and warm it according to your instructions." },
-  { q: "How do you manage dietary requirements?", a: "As part of our registration process we record your child’s individual dietary needs, whether medical, cultural or related to weaning stage. Please notify us in writing immediately if anything changes so our records remain accurate." },
-  { q: "How do you encourage good eating habits?", a: "Mealtimes are relaxed and social. Children are encouraged to sit together, enjoy their food and try new flavours. A member of the team sits with them to model positive habits and conversation. We respect cultural differences in eating practices, and you’ll receive updates on your child’s meals at collection or via our nursery app." },
+  {
+    q: "Will my child’s meals be provided?",
+    a: "Yes — breakfast, lunch and one snack are included in every session at no extra cost. All food is freshly prepared and delivered each day by our specialist nursery catering partners.",
+  },
+  {
+    q: "Who provides the food?",
+    a: "Our meals are supplied by Zebedees, one of the UK’s leading nursery catering companies. They have more than 25 years’ experience providing nutritious, balanced, EYFS-compliant meals for young children across London and the South East. Everything is freshly cooked and delivered hot each day, with menus designed to support healthy growth and a wide variety of tastes and textures.",
+  },
+  {
+    q: "Do you provide formula milk?",
+    a: "We can prepare formula using milk that you supply, following your written instructions. Please discuss your preferred brand and feeding schedule with your child’s key person before their start date.",
+  },
+  {
+    q: "Can I provide expressed breast milk?",
+    a: "Yes. Please bring clearly labelled bottles with your child’s name and the date expressed. Our team will store and warm it according to your instructions.",
+  },
+  {
+    q: "How do you manage dietary requirements?",
+    a: "As part of our registration process we record your child’s individual dietary needs, whether medical, cultural or related to weaning stage. Please notify us in writing immediately if anything changes so our records remain accurate.",
+  },
+  {
+    q: "How do you encourage good eating habits?",
+    a: "Mealtimes are relaxed and social. Children are encouraged to sit together, enjoy their food and try new flavours. A member of the team sits with them to model positive habits and conversation. We respect cultural differences in eating practices, and you’ll receive updates on your child’s meals at collection or via our nursery app.",
+  },
 ];
-
 export default function MealsPage() {
   return (
     <div className="container py-14 sm:py-16">
