@@ -11,11 +11,11 @@ const MENU = [
 const NOTES = [
   { title: "Allergy-aware kitchen", desc: "Every dish is clearly labelled for common allergens. Suitable substitutes are always available on request at no extra cost." },
   { title: "No added sugar before 2", desc: "Meals for our under-twos contain no added sugar or salt, in line with NHS and Early Years Foundation Stage guidance." },
-  { title: "if you prefer", desc: "We’re happy to warm and serve home-packed lunches alongside our menu — just label the container clearly with your child’s name." },
+  { title: "if you prefer", desc: "We're happy to warm and serve home-packed lunches alongside our menu — just label the container clearly with your child's name." },
 ];
 
 const PHILOSOPHY = [
-  { icon: "👩‍🍳", title: "Cooked from scratch", desc: "No pre-packaged or reheated meals. Everything is prepared fresh in our on-site kitchen each morning." },
+  { icon: "👩‍🍳", title: "Catering & Meals", desc: "We don't have an on-site kitchen. Instead, we partner with a catering company, Zebeedes, who provides our food." },
   { icon: "💧", title: "Water throughout the day", desc: "Fresh drinking water is freely available and offered regularly, not just at mealtimes." },
   { icon: "🥦", title: "Whole, fresh ingredients", desc: "We use fresh vegetables, wholegrains and lean proteins. No artificial colours, flavours or additives." },
   { icon: "📝", title: "Menus shared weekly", desc: "Full menus are posted a week in advance so you can flag any allergies or preferences in good time." },
