@@ -248,7 +248,7 @@ export default function HomePage() {
         {/* QUICK LINKS */}
         <div className="pb-20">
           <h2 className="text-xl text-center mb-5">Everything About Little Garden Gate</h2>
-          <div className="flex flex-row gap-2.5 justify-center">
+          <div className="flex flex-wrap md:flex-row gap-2.5 justify-center">
             {QUICK_LINKS.map((l) => (
               <Link
                 key={l.href}
