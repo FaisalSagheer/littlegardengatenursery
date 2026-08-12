@@ -54,6 +54,7 @@ const QUICK_LINKS = [
   { href: "/about", label: "📖 About Us" },
   { href: "/about#amenities", label: "🧸 Amenities" },
   { href: "/meals", label: "🍎 Meals & Snacks" },
+  { href: "/policies", label: "🗃️ Policies" },
   { href: "/documents", label: "📋 Documents" },
   { href: "/fees", label: "💳 Fees & Admission" },
   { href: "/careers", label: "💼 Careers" },
