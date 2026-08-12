@@ -248,12 +248,12 @@ export default function HomePage() {
         {/* QUICK LINKS */}
         <div className="pb-20">
           <h2 className="text-xl text-center mb-5">Everything About Little Garden Gate</h2>
-          <div className="flex flex-wrap gap-2.5 justify-center">
+          <div className="flex flex-row gap-2.5 justify-center">
             {QUICK_LINKS.map((l) => (
               <Link
                 key={l.href}
                 href={l.href}
-                className="font-display text-[13.5px] font-medium bg-card border border-line rounded-full px-5 py-2.5 hover:bg-[#F1E9D4] transition-colors"
+                className="font-display text-xs font-medium bg-card border border-line rounded-full px-5 py-2.5 hover:bg-[#F1E9D4] transition-colors"
               >
                 {l.label}
               </Link>
