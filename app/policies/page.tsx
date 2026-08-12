@@ -31,6 +31,36 @@ const GROUPS = [
   { cat: "General", items: ["Privacy notice", "Complaints procedure", "Working in partnership with parents", "British values statement"] },
 ];
 
+const OPS_DOCS = [
+  { title: "Safeguarding Child Protection Policy", desc: "", file: "/policies/safeguarding-child-protection-policy.pdf" },
+  { title: "Compliants Policy and procedure", desc: "", file: "/policies/compliants-policy-and-procedures.pdf" },
+  { title: "Admissions Policy", desc: "", file: "/policies/admissions-policy.pdf" },
+  { title: "Health & Safety Policy", desc: "", file: "/policies/health-and-safety-policy.pdf" },
+  { title: "Equal Opportunities and Inclusion Policy", desc: "", file: "/policies/equal-opportunities-and-inclusion-policy.pdf" },
+  { title: "Data Protection & GDPR Privacy", desc: "", file: "/policies/data-protection.pdf" },
+];
+
+function DocCard({ title, desc, file, action = "Download form" }: { title: string; desc: string; file?: string; action?: string }) {
+  return (
+    <div className="border-2 border-ink rounded-2xl bg-card p-6 flex flex-col gap-2.5">
+      <span className="self-start font-display text-[11px] uppercase tracking-wider bg-ink text-white px-2.5 py-1 rounded -mt-6 -ml-0.5">
+        PDF
+      </span>
+      <h3 className="text-[16.5px]">{title}</h3>
+      <p className="text-sm text-ink-soft flex-1">{desc}</p>
+      {file ? (
+        <a href={file} download className="font-display font-semibold text-sm text-sage-dark inline-flex items-center gap-1.5">
+          {action} ↓
+        </a>
+      ) : (
+        <span className="font-display font-semibold text-sm text-ink-soft/60 inline-flex items-center gap-1.5" title="Connect a real file to enable this download">
+          {action} ↓
+        </span>
+      )}
+    </div>
+  );
+}
+
 export default function PoliciesPage() {
   return (
     <div className="container py-14 sm:py-16">
@@ -61,11 +91,21 @@ export default function PoliciesPage() {
         ))}
       </div>
 
+      <div className="mb-4">
+        <h2 className="text-[22px] mb-1.5">Policies & Procedures forms</h2>
+        <p className="text-ink-soft text-sm mb-5">
+          These are ready to download right now — real forms we use day to day.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {OPS_DOCS.map((d) => (
+            <DocCard key={d.title} {...d} />
+          ))}
+        </div>
+      </div>
       <div className="rounded-2xl bg-[#E6EEF3] p-7">
         <strong className="block font-display mb-1">Want the full document?</strong>
         <p className="text-[14.5px] text-ink-soft">
-          Every policy above is available in full as a PDF from the front desk or our Nursery
-          Manager — just ask during your tour or via our Contact page.
+          Every <span className="capitalize font-bold">policy and procedure </span>above is available in full as a PDF
         </p>
       </div>
     </div>
