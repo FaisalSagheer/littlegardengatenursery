@@ -150,9 +150,9 @@ export default function HomePage() {
             </Button>
           </div>
           <div className="relative h-[220px] max-w-[320px] mx-auto lg:max-w-none" aria-hidden="true">
-            <div className="absolute top-2.5 left-10 h-[150px] shadow-lg bg-sage rounded-md w-[150px] -rotate-6 bg-[url(/images/sun.png)] bg-contain bg-center bg-no-repeat" />
-            <div className="absolute top-[100px] left-[150px] shadow-lg bg-rose rounded-md h-[130px] w-[130px] rotate-6 bg-[url(/images/butterfly.png)] bg-contain bg-center bg-no-repeat" />
-            <div className="absolute top-0 left-[205px] h-[110px] w-[110px] bg-mustard -rotate-3 shadow-lg rounded-md bg-[url(/images/bird.png)] bg-contain bg-center bg-no-repeat" />
+            <div className="absolute top-2.5 -left-32 lg:left-10 h-[150px] shadow-lg bg-sage rounded-md w-[150px] -rotate-6 bg-[url(/images/sun.png)] bg-contain bg-center bg-no-repeat" />
+            <div className="absolute top-[100px] -left-5 lg:left-[150px] shadow-lg bg-rose rounded-md h-[130px] w-[130px] rotate-6 bg-[url(/images/butterfly.png)] bg-contain bg-center bg-no-repeat" />
+            <div className="absolute top-0 left-8 lg:left-[205px] h-[110px] w-[110px] bg-mustard -rotate-3 shadow-lg rounded-md bg-[url(/images/bird.png)] bg-contain bg-center bg-no-repeat" />
           </div>
         </div>
 

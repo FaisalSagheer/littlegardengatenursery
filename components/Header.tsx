@@ -23,9 +23,9 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-paper/90 backdrop-blur-sm px-4 sm:px-6 md:px-10">
-      <div className="flex items-center justify-evenly py-6">
+      <div className="flex items-center md:justify-between lg:justify-evenly py-6">
         <Link href="/" className="flex items-center gap-2.5 font-display text-lg font-bold">
-          <Image src={"/images/logo.png"} alt={"Logo"} priority width={200} height={100} className="w-72" />
+          <Image src={"/images/logo.png"} alt={"Logo"} priority width={400} height={200} className="w-72" />
           {/* Little Garden Gate Nursery */}
           {/* <video className="h-10" autoPlay muted loop>
             <source src="/images/Animated_logo.mp4"/>
