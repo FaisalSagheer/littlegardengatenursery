@@ -22,12 +22,12 @@ const CHECKLIST = [
 // ];
 
 const POLICY_DOCS = [
-  { title: "Admissions Policy", desc: "How places are offered, priority criteria, and funded entitlement eligibility.", file: "/documents/admissions-policy.pdf" },
-  { title: "Complaints Policy & Procedure", desc: "Our three-stage process for raising and resolving a concern.", file: "/documents/complaints-policy-and-procedures.pdf" },
-  { title: "Data Protection & GDPR Privacy Notice", desc: "What data we hold, why, and your rights under UK GDPR.", file: "/documents/data-protection-gdpr-privacy-notice.pdf" },
-  { title: "Equal Opportunities & Inclusion Policy", desc: "Our commitment to equality, diversity, and inclusion for every family.", file: "/documents/equal-opportunities-and-inclusion-policy.pdf" },
-  { title: "Health & Safety Policy", desc: "How we keep children, staff, and visitors safe across the nursery.", file: "/documents/health-and-safety-policy.pdf" },
-  { title: "Safeguarding & Child Protection Policy", desc: "How we recognise, record, and refer any concern about a child's welfare.", file: "/documents/safeguarding-child-protection-policy.pdf" },
+  { title: "Admissions Policy", desc: "How places are offered, priority criteria, and funded entitlement eligibility.", file: "/policies/admissions-policy.pdf" },
+  { title: "Complaints Policy & Procedure", desc: "Our three-stage process for raising and resolving a concern.", file: "/policies/complaints-policy-and-procedures.pdf" },
+  { title: "Data Protection & GDPR Privacy Notice", desc: "What data we hold, why, and your rights under UK GDPR.", file: "/policies/data-protection-gdpr-privacy-notice.pdf" },
+  { title: "Equal Opportunities & Inclusion Policy", desc: "Our commitment to equality, diversity, and inclusion for every family.", file: "/policies/equal-opportunities-and-inclusion-policy.pdf" },
+  { title: "Health & Safety Policy", desc: "How we keep children, staff, and visitors safe across the nursery.", file: "/policies/health-and-safety-policy.pdf" },
+  { title: "Safeguarding & Child Protection Policy", desc: "How we recognise, record, and refer any concern about a child's welfare.", file: "/policies/safeguarding-child-protection-policy.pdf" },
 ];
 
 const OPS_DOCS = [
@@ -120,7 +120,7 @@ export default function DocumentsPage() {
 <div className="mt-14 mb-11">
   <h2 className="text-[22px] mb-1.5">Policies</h2>
   <p className="text-ink-soft text-sm mb-5">
-    Our full policies, ready to download — the same documents Ofsted inspectors ask to see.
+    Our full policies, ready to download documents.
   </p>
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
     {POLICY_DOCS.map((d) => (
