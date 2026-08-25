@@ -10,15 +10,24 @@ const CHECKLIST = [
   { title: "Authorized pickup list", desc: "Names of anyone besides parents who may collect your child.", req: false },
 ];
 
-const PARENT_DOCS = [
-  { title: "Childcare Registration & Consent Form", desc: "Child & parent details, program selection, and consent to enrol." },
-  { title: "Revised Terms & Conditions", desc: "Our current booking, payment, and notice-period terms." },
-  { title: "All About Me Form", desc: "Help your child's keyworker get to know their routines, comforts, and personality." },
-  { title: "Required for Registration", desc: "A one-page checklist of every document needed before your child's start date." },
-  { title: "EY Log Registration & Consent Form", desc: "Early years log details and consent for observations and records." },
-  { title: "GDPR Notice", desc: "How we collect, use, and protect your family's personal data." },
-  { title: "New Parents Checklist", desc: "A friendly guide to what to expect in your child's first weeks with us." },
-  { title: "Ofsted Report", desc: "Our most recent inspection report, published in full.", action: "View report" },
+// const PARENT_DOCS = [
+//   { title: "Childcare Registration & Consent Form", desc: "Child & parent details, program selection, and consent to enrol.", },
+//   { title: "Revised Terms & Conditions", desc: "Our current booking, payment, and notice-period terms." },
+//   { title: "All About Me Form", desc: "Help your child's keyworker get to know their routines, comforts, and personality." },
+//   { title: "Required for Registration", desc: "A one-page checklist of every document needed before your child's start date." },
+//   { title: "EY Log Registration & Consent Form", desc: "Early years log details and consent for observations and records." },
+//   { title: "GDPR Notice", desc: "How we collect, use, and protect your family's personal data." },
+//   { title: "New Parents Checklist", desc: "A friendly guide to what to expect in your child's first weeks with us." },
+//   { title: "Ofsted Report", desc: "Our most recent inspection report, published in full.", action: "View report" },
+// ];
+
+const POLICY_DOCS = [
+  { title: "Admissions Policy", desc: "How places are offered, priority criteria, and funded entitlement eligibility.", file: "/documents/admissions-policy.pdf" },
+  { title: "Complaints Policy & Procedure", desc: "Our three-stage process for raising and resolving a concern.", file: "/documents/complaints-policy-and-procedures.pdf" },
+  { title: "Data Protection & GDPR Privacy Notice", desc: "What data we hold, why, and your rights under UK GDPR.", file: "/documents/data-protection-gdpr-privacy-notice.pdf" },
+  { title: "Equal Opportunities & Inclusion Policy", desc: "Our commitment to equality, diversity, and inclusion for every family.", file: "/documents/equal-opportunities-and-inclusion-policy.pdf" },
+  { title: "Health & Safety Policy", desc: "How we keep children, staff, and visitors safe across the nursery.", file: "/documents/health-and-safety-policy.pdf" },
+  { title: "Safeguarding & Child Protection Policy", desc: "How we recognise, record, and refer any concern about a child's welfare.", file: "/documents/safeguarding-child-protection-policy.pdf" },
 ];
 
 const OPS_DOCS = [
@@ -96,7 +105,7 @@ export default function DocumentsPage() {
         </div>
       </div>
 
-      <div className="mt-14 mb-11">
+      {/* <div className="mt-14 mb-11">
         <h2 className="text-[22px] mb-1.5">Parent &amp; enrollment documents</h2>
         <p className="text-ink-soft text-sm mb-5">
           Templates for your paperwork — connect real files to these before launch.
@@ -106,7 +115,19 @@ export default function DocumentsPage() {
             <DocCard key={d.title} {...d} action={d.action} />
           ))}
         </div>
-      </div>
+      </div> */}
+
+<div className="mt-14 mb-11">
+  <h2 className="text-[22px] mb-1.5">Policies</h2>
+  <p className="text-ink-soft text-sm mb-5">
+    Our full policies, ready to download — the same documents Ofsted inspectors ask to see.
+  </p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    {POLICY_DOCS.map((d) => (
+      <DocCard key={d.title} {...d} />
+    ))}
+  </div>
+</div>
 
       <div className="rounded-2xl bg-[#F1E9D4] p-6 flex gap-4 items-start mb-11">
         <div className="w-[38px] h-[38px] rounded-xl bg-mustard flex items-center justify-center text-base flex-none">💡</div>
